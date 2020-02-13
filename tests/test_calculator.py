@@ -25,3 +25,9 @@ class TestCalculator:
     def test_division_error_divide_by_zero(self):
         with pytest.raises(ZeroDivisionError):
             self.calc.div(5, 0)
+
+    def test_multiplication_10_multiply_by_4(self):
+        assert self.calc.mul(10, 4) == 40
+
+    def test_multiplication_12_multiply_by_6(self):
+        assert self.calc.mul(12, 6) == 72
